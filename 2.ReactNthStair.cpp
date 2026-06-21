@@ -25,7 +25,7 @@ int rec(int index, vector<int> &dp){
 
     //SC: O(1)
     int dp0 = 0, dp1 = 1, dp2, ct = 1;
-    while(ct < index){
+    while(ct <= index){
         ct++;
         dp2 = dp1 + dp0;
         dp0 = dp1;
